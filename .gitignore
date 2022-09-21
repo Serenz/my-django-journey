@@ -1,0 +1,5 @@
+#my personal virtual environment
+my_env/
+
+#local database
+*.sqlite3
