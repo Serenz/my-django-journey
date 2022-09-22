@@ -6,3 +6,7 @@ my_env/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+
+
+# ignore the local file containing the passwords needed to use the email provider
+passwords.py
