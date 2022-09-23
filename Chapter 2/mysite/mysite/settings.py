@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,5 @@ EMAIL_HOST_USER = passwords.USERNAME
 EMAIL_HOST_PASSWORD = passwords.PASSWORD
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = passwords.USERNAME
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
